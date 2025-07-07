@@ -10,7 +10,6 @@ node* newnode()
     node *temp = (node *)malloc(sizeof(node));
     temp->isWord = false;
     for(int i = 0; i < 26; i++) temp->child[i] = NULL;
-
     return temp;
 }
 void insert(node *root, string str)
@@ -115,4 +114,5 @@ int main()
                     break;
         }
     }
+    return 0;
 }
